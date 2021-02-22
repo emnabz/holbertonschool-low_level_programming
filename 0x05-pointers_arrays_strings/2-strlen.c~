@@ -1,0 +1,15 @@
+#include "holberton.h"
+/**Holberton!
+* _strlen - returns length of a string
+* @s: value to be checked
+* Return: length
+*/
+int _strlen(char *s)
+{
+int i;
+for (i = 0; *s != '\0'; i++)
+{
+s++;
+}
+return (i);
+}

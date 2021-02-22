@@ -1,0 +1,33 @@
+#include "holberton.h"
+#include <stdio.h>
+#include <stdlib.h>
+/**
+*main - creats an array of chars
+*@size: number of bytes to allocate
+*@c: characters to place
+*Return: NULL is size 0
+*/
+char *create_array(unsigned int size, char c)
+{
+char *b;
+unsigned int i;
+i = 0;
+if (size == 0)
+{
+return (NULL);
+}
+b = malloc(size * sizeof(char));
+if (i < size)
+{
+while (i < size)
+{
+b[i] = c;
+i++;
+}
+return (b);
+}
+else
+{
+return (0);
+}
+}

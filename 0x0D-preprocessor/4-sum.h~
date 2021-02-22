@@ -1,0 +1,4 @@
+#ifndef
+#define EMNA
+#define SUM(x, y) (x + y)
+#indef
